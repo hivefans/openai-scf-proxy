@@ -17,7 +17,3 @@ app.use('/', createProxyMiddleware({
     proxyRes.headers['Access-Control-Allow-Origin'] = '*';
   }
 }));
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
