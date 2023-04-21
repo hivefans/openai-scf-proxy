@@ -3,7 +3,7 @@ const {
   createProxyMiddleware
 } = require('http-proxy-middleware');
 const app = express()
-const port = 9000
+const PORT = process.env.PORT || 8081;
 
 app.use('/', createProxyMiddleware({
   target: 'https://api.openai.com',
@@ -18,6 +18,6 @@ app.use('/', createProxyMiddleware({
   }
 }));
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
