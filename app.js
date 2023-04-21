@@ -19,5 +19,5 @@ app.use('/', createProxyMiddleware({
 }));
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${server.address().port}`)
+  console.log(`Example app listening`)
 })
