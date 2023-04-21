@@ -3,7 +3,7 @@ const {
   createProxyMiddleware
 } = require('http-proxy-middleware');
 const app = express()
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 3000;
 
 app.use('/', createProxyMiddleware({
   target: 'https://api.openai.com',
