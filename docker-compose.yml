@@ -3,4 +3,4 @@ services:
     build: .
     shm_size: 0.5gb
     ports:
-      - "80:80"
+      - "3000:80"
